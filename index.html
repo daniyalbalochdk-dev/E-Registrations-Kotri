@@ -1,1 +1,1416 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>ای رجسٹریشنز | آن لائن اسٹامپ پیپر | کوٹری</title>
+
+<meta name="description"
+content="کوٹری ضلع جامشورو میں آن لائن اسٹامپ پیپر، ڈیڈ کمپوزنگ، پرنٹنگ اور دستاویزی خدمات۔">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Public+Sans:wght@400;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+    --navy:#063B45;
+    --navy2:#082F38;
+    --green:#087A55;
+    --green2:#0BA66F;
+    --light-green:#EAF7F1;
+    --gold:#E9B949;
+    --gold-light:#FFF4C9;
+    --cream:#F5F8F6;
+    --white:#FFFFFF;
+    --text:#19332D;
+    --muted:#687A73;
+    --border:#DCE7E2;
+    --shadow:0 12px 35px rgba(6,59,69,.10);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:var(--cream);
+    color:var(--text);
+    font-family:"Noto Naskh Arabic",serif;
+    font-size:18px;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1160px,calc(100% - 30px));
+    margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:var(--navy2);
+    color:white;
+    font-size:14px;
+}
+
+.topbar .container{
+    min-height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+}
+
+.header-inner{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--navy);
+}
+
+.logo{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--navy),var(--green));
+    color:white;
+    display:grid;
+    place-items:center;
+    font-family:Georgia,serif;
+    font-size:30px;
+    font-weight:bold;
+    box-shadow:0 7px 18px rgba(6,59,69,.2);
+}
+
+.logo-text{
+    font-size:25px;
+    font-weight:700;
+}
+
+.nav{
+    display:flex;
+    gap:25px;
+    font-weight:600;
+    font-size:17px;
+}
+
+.nav a:hover{
+    color:var(--green);
+}
+
+/* HERO */
+
+.hero{
+    background:
+    radial-gradient(circle at 15% 20%,rgba(11,166,111,.10),transparent 30%),
+    linear-gradient(135deg,#ECF8F2,#FFFFFF 55%,#F4F8EA);
+}
+
+.hero-inner{
+    min-height:530px;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:50px;
+    padding:65px 0;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    background:var(--light-green);
+    color:var(--green);
+    border:1px solid #CBE8DA;
+    padding:4px 16px;
+    border-radius:30px;
+    font-weight:700;
+}
+
+.hero h1{
+    color:var(--navy);
+    font-size:clamp(40px,5vw,66px);
+    line-height:1.15;
+    margin:18px 0 15px;
+}
+
+.hero h1 span{
+    color:var(--green);
+}
+
+.hero-text{
+    max-width:650px;
+    color:var(--muted);
+    font-size:21px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.btn{
+    min-height:50px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 22px;
+    border-radius:9px;
+    font-weight:700;
+    border:1px solid transparent;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:var(--green);
+    color:white;
+    box-shadow:0 8px 20px rgba(8,122,85,.22);
+}
+
+.btn-primary:hover{
+    background:#066847;
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    background:white;
+    border-color:var(--navy);
+    color:var(--navy);
+}
+
+.btn-outline:hover{
+    background:var(--light-green);
+}
+
+/* STAMP PAPER GRAPHIC */
+
+.hero-visual{
+    min-height:380px;
+    display:grid;
+    place-items:center;
+    position:relative;
+}
+
+.document{
+    width:330px;
+    height:390px;
+    background:white;
+    border:1px solid #D6E1DB;
+    border-radius:8px;
+    box-shadow:0 25px 55px rgba(6,59,69,.18);
+    transform:rotate(-4deg);
+    position:relative;
+    padding:28px;
+}
+
+.document:before{
+    content:"";
+    position:absolute;
+    inset:16px;
+    border:2px solid #DCE9E1;
+    border-radius:5px;
+}
+
+.document-title{
+    position:relative;
+    text-align:center;
+    color:var(--navy);
+    font-size:29px;
+    font-weight:bold;
+    margin-top:25px;
+}
+
+.document-sub{
+    position:relative;
+    text-align:center;
+    color:var(--green);
+    font-size:18px;
+}
+
+.document-lines{
+    position:relative;
+    margin-top:30px;
+}
+
+.document-lines span{
+    display:block;
+    height:7px;
+    background:#E6EEEA;
+    border-radius:5px;
+    margin:14px 15px;
+}
+
+.stamp{
+    position:absolute;
+    bottom:30px;
+    left:25px;
+    width:105px;
+    height:105px;
+    border:5px double var(--green);
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    color:var(--green);
+    font-weight:bold;
+    background:rgba(255,255,255,.9);
+    transform:rotate(-12deg);
+}
+
+.star{
+    position:absolute;
+    right:3%;
+    top:5%;
+    color:var(--gold);
+    font-size:50px;
+}
+
+.circle{
+    position:absolute;
+    left:5%;
+    top:18%;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--gold);
+}
+
+/* NOTICE */
+
+.notice{
+    background:var(--gold);
+    color:#25391F;
+    border-bottom:1px solid #D5A62E;
+}
+
+.notice .container{
+    min-height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+}
+
+.notice strong{
+    font-size:21px;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:70px 0;
+}
+
+.section.white{
+    background:white;
+}
+
+.section-heading{
+    max-width:720px;
+    text-align:center;
+    margin:0 auto 35px;
+}
+
+.section-heading h2{
+    color:var(--navy);
+    font-size:40px;
+    line-height:1.2;
+    margin:0 0 8px;
+}
+
+.section-heading p{
+    margin:0;
+    color:var(--muted);
+}
+
+/* SERVICE CARDS */
+
+.service-cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.service-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:25px 18px;
+    box-shadow:0 5px 20px rgba(6,59,69,.05);
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+    border-color:#B8D9CA;
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    display:grid;
+    place-items:center;
+    border-radius:15px;
+    background:var(--light-green);
+    color:var(--green);
+    font-size:31px;
+    margin-bottom:14px;
+}
+
+.service-card h3{
+    margin:0 0 4px;
+    color:var(--navy);
+    font-size:21px;
+}
+
+.service-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:15px;
+}
+
+/* SEARCH */
+
+.search{
+    max-width:680px;
+    margin:0 auto 30px;
+}
+
+.search input{
+    width:100%;
+    height:58px;
+    border:1px solid #BBD3C7;
+    border-radius:10px;
+    background:white;
+    padding:8px 20px;
+    font-family:inherit;
+    font-size:18px;
+    outline:none;
+}
+
+.search input:focus{
+    border-color:var(--green);
+    box-shadow:0 0 0 3px rgba(8,122,85,.1);
+}
+
+/* GROUPS */
+
+.groups{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.group{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:13px;
+    overflow:hidden;
+}
+
+.group summary{
+    cursor:pointer;
+    list-style:none;
+    padding:17px 20px;
+    color:var(--navy);
+    font-size:20px;
+    font-weight:700;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.group summary::-webkit-details-marker{
+    display:none;
+}
+
+.group summary:after{
+    content:"+";
+    color:var(--green);
+    font-family:Arial;
+    font-size:26px;
+}
+
+.group[open] summary:after{
+    content:"−";
+}
+
+.group ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border-top:1px solid var(--border);
+}
+
+.group li{
+    border-bottom:1px solid #EDF2EF;
+}
+
+.group li:last-child{
+    border-bottom:0;
+}
+
+.group li a{
+    display:block;
+    padding:10px 20px;
+    font-size:16px;
+    color:#40564E;
+}
+
+.group li a:hover{
+    background:var(--light-green);
+    color:var(--green);
+}
+
+/* FACILITIES */
+
+.facilities{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+.facility{
+    background:#F7FAF8;
+    border:1px solid var(--border);
+    border-radius:13px;
+    padding:25px 15px;
+    text-align:center;
+}
+
+.facility-icon{
+    font-size:34px;
+}
+
+.facility strong{
+    display:block;
+    color:var(--navy);
+    font-size:19px;
+    margin-top:5px;
+}
+
+.facility span{
+    color:var(--muted);
+    font-size:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:linear-gradient(135deg,var(--navy),#075D4D);
+    color:white;
+}
+
+.contact-inner{
+    padding:65px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.contact h2{
+    margin:0 0 8px;
+    font-size:42px;
+}
+
+.contact p{
+    color:#D8E9E4;
+}
+
+.phone{
+    font-family:Arial,sans-serif;
+    direction:ltr;
+    text-align:right;
+    font-size:40px;
+    font-weight:800;
+    color:#FFE27A;
+}
+
+.contact .btn-outline{
+    background:transparent;
+    border-color:white;
+    color:white;
+}
+
+.contact .btn-outline:hover{
+    background:rgba(255,255,255,.1);
+}
+
+/* FOOTER */
+
+footer{
+    background:white;
+    border-top:1px solid var(--border);
+    padding:22px 0;
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* MOBILE BAR */
+
+.mobile-bar{
+    display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+
+    .nav{
+        display:none;
+    }
+
+    .hero-inner{
+        grid-template-columns:1fr;
+        padding:45px 0;
+    }
+
+    .hero-visual{
+        min-height:390px;
+    }
+
+    .service-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .facilities{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .groups{
+        grid-template-columns:1fr;
+    }
+
+    .contact-inner{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    body{
+        padding-bottom:72px;
+    }
+
+    .container{
+        width:calc(100% - 22px);
+    }
+
+    .topbar .container{
+        font-size:11px;
+    }
+
+    .logo{
+        width:42px;
+        height:42px;
+    }
+
+    .logo-text{
+        font-size:21px;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero-text{
+        font-size:18px;
+    }
+
+    .buttons{
+        display:grid;
+    }
+
+    .buttons .btn{
+        width:100%;
+    }
+
+    .document{
+        width:275px;
+        height:335px;
+    }
+
+    .service-cards{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .service-card{
+        padding:17px 12px;
+    }
+
+    .service-card h3{
+        font-size:18px;
+    }
+
+    .service-card p{
+        font-size:13px;
+    }
+
+    .icon{
+        width:48px;
+        height:48px;
+        font-size:25px;
+    }
+
+    .facilities{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .section{
+        padding:48px 0;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .contact-inner{
+        padding:48px 0;
+    }
+
+    .contact h2{
+        font-size:32px;
+    }
+
+    .phone{
+        font-size:29px;
+    }
+
+    .mobile-bar{
+        display:grid;
+        position:fixed;
+        z-index:200;
+        bottom:0;
+        left:0;
+        right:0;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+        background:white;
+        border-top:1px solid var(--border);
+        padding:9px;
+    }
+
+    .mobile-bar .btn{
+        min-height:49px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+<div class="container">
+<span>کوٹری، ضلع جامشورو</span>
+<span>سرکاری اسٹامپ وینڈر • آن لائن اسٹامپ پیپر</span>
+</div>
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-inner">
+
+<a href="#home" class="logo-area">
+
+<span class="logo">e</span>
+
+<span class="logo-text">
+ای رجسٹریشنز
+</span>
+
+</a>
+
+<nav class="nav">
+
+<a href="#home">ہوم</a>
+<a href="#services">خدمات</a>
+<a href="#documents">دستاویزات</a>
+<a href="#facilities">سہولیات</a>
+<a href="#contact">رابطہ</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main id="home">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-inner">
+
+<div>
+
+<span class="badge">
+✓ آسان، تیز اور قابلِ اعتماد
+</span>
+
+<h1>
+آن لائن
+<span>اسٹامپ پیپر</span>
+اور دستاویزی خدمات
+</h1>
+
+<p class="hero-text">
+
+کوٹری میں آن لائن پرنٹ شدہ اسٹامپ پیپر،
+ڈیڈ کمپوزنگ اور پرنٹنگ کی سہولت۔
+سندھی، اردو اور انگریزی میں دستاویزات تیار کروائیں۔
+
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="https://wa.me/923001320027?text=السلام%20علیکم،%20مجھے%20اسٹامپ%20پیپر%20کے%20بارے%20میں%20معلومات%20چاہیے۔">
+
+واٹس ایپ پر رابطہ کریں
+
+</a>
+
+<a class="btn btn-outline"
+href="tel:+923001320027">
+
+☎ 0300-1320027
+
+</a>
+
+</div>
+
+<p>
+
+<strong>سرفراز مگسی</strong><br>
+
+سرکاری اسٹامپ وینڈر<br>
+
+ڈی سی آفس مین روڈ، گیٹ کے سامنے،
+کوٹری، ضلع جامشورو
+
+</p>
+
+</div>
+
+
+<!-- STAMP PAPER -->
+
+<div class="hero-visual">
+
+<span class="star">✦</span>
+
+<span class="circle"></span>
+
+<div class="document">
+
+<div class="document-title">
+ای۔اسٹامپ
+</div>
+
+<div class="document-sub">
+آن لائن اسٹامپ پیپر
+</div>
+
+<div class="document-lines">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<div class="stamp">
+سرکاری<br>
+مہر<br>
+کوٹری
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NOTICE -->
+
+<div class="notice">
+
+<div class="container">
+
+<strong>اہم اطلاع:</strong>
+
+<span>
+روایتی اسٹامپ پیپر کا کام بند ہے۔
+اب صرف آن لائن پرنٹ شدہ اسٹامپ پیپر استعمال کریں۔
+</span>
+
+</div>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>ہماری خدمات</h2>
+
+<p>
+ضرورت کے مطابق مطلوبہ سروس منتخب کریں
+اور واٹس ایپ پر براہِ راست رابطہ کریں۔
+</p>
+
+</div>
+
+
+<div class="service-cards">
+
+<div class="service-card">
+
+<div class="icon">📜</div>
+
+<h3>آن لائن اسٹامپ پیپر</h3>
+
+<p>
+آن لائن اسٹامپ پیپر کی سہولت
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="icon">✍️</div>
+
+<h3>ڈیڈ کمپوزنگ</h3>
+
+<p>
+دستاویزات کی کمپوزنگ اور تیاری
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="icon">🖨️</div>
+
+<h3>پرنٹنگ</h3>
+
+<p>
+صاف اور معیاری پرنٹ کی سہولت
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="icon">🌐</div>
+
+<h3>تین زبانیں</h3>
+
+<p>
+سندھی، اردو اور انگریزی
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DOCUMENTS -->
+
+<section class="section white" id="documents">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>دستاویزات اور ڈیڈز</h2>
+
+<p>
+اپنی مطلوبہ دستاویز تلاش کریں۔
+سروس پر کلک کرکے واٹس ایپ پر معلومات حاصل کریں۔
+</p>
+
+</div>
+
+
+<div class="search">
+
+<input
+id="search"
+type="search"
+placeholder="مثلاً: سیل ڈیڈ، کرایہ نامہ، پاور آف اٹارنی۔۔۔"
+>
+
+</div>
+
+
+<div class="groups" id="groups">
+
+
+<!-- SALE -->
+
+<details class="group">
+
+<summary>
+فروخت اور منتقلی
+</summary>
+
+<ul>
+
+<li><a>سیل ڈیڈ</a></li>
+<li><a>معاہدہ فروخت بمع قبضہ</a></li>
+<li><a>معاہدہ فروخت بغیر قبضہ</a></li>
+<li><a>پری لیز ایگریمنٹ آف سیل</a></li>
+<li><a>کنوینس ڈیڈ</a></li>
+<li><a>سرٹیفکیٹ آف سیل</a></li>
+<li><a>جائیداد کا تبادلہ</a></li>
+<li><a>ڈیڈ آف اسائنمنٹ</a></li>
+<li><a>ریلیز ڈیڈ</a></li>
+
+</ul>
+
+</details>
+
+
+<!-- LEASE -->
+
+<details class="group">
+
+<summary>
+لیز اور کرایہ
+</summary>
+
+<ul>
+
+<li><a>لیز ڈیڈ</a></li>
+<li><a>سب لیز ڈیڈ</a></li>
+<li><a>کرایہ نامہ</a></li>
+<li><a>لیز کی تجدید</a></li>
+<li><a>لیز کی مدت میں توسیع</a></li>
+<li><a>ڈیڈ آف سرنڈر</a></li>
+
+</ul>
+
+</details>
+
+
+<!-- POWER -->
+
+<details class="group">
+
+<summary>
+پاور آف اٹارنی
+</summary>
+
+<ul>
+
+<li><a>جنرل پاور آف اٹارنی</a></li>
+<li><a>اسپیشل پاور آف اٹارنی</a></li>
+<li><a>ناقابلِ تنسیخ جنرل پاور آف اٹارنی</a></li>
+<li><a>سب جنرل پاور آف اٹارنی</a></li>
+<li><a>پاور آف اٹارنی کی منسوخی</a></li>
+
+</ul>
+
+</details>
+
+
+<!-- GIFT -->
+
+<details class="group">
+
+<summary>
+گفٹ، وصیت اور وقف
+</summary>
+
+<ul>
+
+<li><a>گفٹ ڈیڈ</a></li>
+<li><a>زبانی ہبہ کا اقرار نامہ</a></li>
+<li><a>زبانی ہبہ کی منسوخی</a></li>
+<li><a>وصیت نامہ</a></li>
+<li><a>وصیت کی منسوخی</a></li>
+<li><a>وقف ڈیڈ</a></li>
+<li><a>ٹرسٹ ڈیڈ</a></li>
+
+</ul>
+
+</details>
+
+
+<!-- MORTGAGE -->
+
+<details class="group">
+
+<summary>
+رہن اور بینکنگ
+</summary>
+
+<ul>
+
+<li><a>مارگیج ڈیڈ بینکنگ</a></li>
+<li><a>مارگیج میں ترمیم</a></li>
+<li><a>ڈیڈ آف مزید چارج</a></li>
+<li><a>انڈرٹیکنگ یا سکیورٹی بانڈ</a></li>
+
+</ul>
+
+</details>
+
+
+<!-- BUSINESS -->
+
+<details class="group">
+
+<summary>
+پارٹنرشپ اور کاروبار
+</summary>
+
+<ul>
+
+<li><a>پارٹنرشپ ڈیڈ</a></li>
+<li><a>پارٹنرشپ کی تحلیل</a></li>
+<li><a>ڈیڈ آف امالگمیشن</a></li>
+<li><a>میمورنڈم ڈیڈ</a></li>
+<li><a>اثاثوں کا اقرار نامہ</a></li>
+
+</ul>
+
+</details>
+
+
+<!-- CORRECTION -->
+
+<details class="group">
+
+<summary>
+درستگی اور عدالتی دستاویزات
+</summary>
+
+<ul>
+
+<li><a>ترمیمی ڈیڈ</a></li>
+<li><a>درستگی ڈیڈ</a></li>
+<li><a>ریکٹیفیکیشن ڈیڈ</a></li>
+<li><a>ایڈینڈا ڈیڈ</a></li>
+<li><a>سپلیمنٹ ڈیڈ</a></li>
+<li><a>عدالتی مقدمے کی زیرِ سماعت ہونے کا نوٹس</a></li>
+<li><a>عدالتی حکم نامہ</a></li>
+
+</ul>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FACILITIES -->
+
+<section class="section" id="facilities">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>ہماری سہولیات</h2>
+
+<p>
+ضروری کام ایک ہی جگہ پر
+</p>
+
+</div>
+
+
+<div class="facilities">
+
+<div class="facility">
+
+<div class="facility-icon">📜</div>
+
+<strong>آن لائن اسٹامپ پیپر</strong>
+
+<span>دستیاب ہے</span>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">🖨️</div>
+
+<strong>پرنٹنگ</strong>
+
+<span>پرنٹ کی سہولت موجود ہے</span>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">✍️</div>
+
+<strong>کمپوزنگ</strong>
+
+<span>سندھی، اردو اور انگریزی</span>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">⚡</div>
+
+<strong>بجلی</strong>
+
+<span>دستیاب</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-inner">
+
+<div>
+
+<h2>
+رابطہ کریں
+</h2>
+
+<p>
+
+اسٹامپ پیپر یا کسی بھی ڈیڈ کے بارے میں
+معلومات کے لیے فون یا واٹس ایپ پر رابطہ کریں۔
+
+</p>
+
+<a
+class="btn btn-primary"
+href="https://wa.me/923001320027?text=السلام%20علیکم،%20مجھے%20دستاویز%20کے%20بارے%20میں%20معلومات%20چاہیے۔"
+>
+
+واٹس ایپ پر پیغام بھیجیں
+
+</a>
+
+</div>
+
+
+<div>
+
+<div class="phone">
+0300-1320027
+</div>
+
+<p>
+
+<strong>سرفراز مگسی</strong><br>
+
+سرکاری اسٹامپ وینڈر<br>
+
+ڈی سی آفس مین روڈ، گیٹ کے سامنے،
+کوٹری، ضلع جامشورو
+
+</p>
+
+<a
+class="btn btn-outline"
+target="_blank"
+rel="noopener"
+href="https://www.google.com/maps/search/?api=1&query=DC+Office+Main+Road+Kotri+Jamshoro"
+>
+
+📍 گوگل میپس میں مقام دیکھیں
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+ای رجسٹریشنز — آن لائن اسٹامپ پیپر اور دستاویزی خدمات
+
+</div>
+
+</footer>
+
+
+<!-- MOBILE CONTACT BAR -->
+
+<nav class="mobile-bar">
+
+<a
+class="btn btn-primary"
+href="https://wa.me/923001320027?text=السلام%20علیکم،%20مجھے%20مدد%20چاہیے۔"
+>
+واٹس ایپ
+</a>
+
+<a
+class="btn btn-outline"
+href="tel:+923001320027"
+>
+کال کریں
+</a>
+
+</nav>
+
+
+<script>
+
+/* WhatsApp number */
+
+const WHATSAPP = "923001320027";
+
+
+/* Every service becomes WhatsApp button */
+
+document.querySelectorAll(".group li a").forEach(link => {
+
+    const serviceName = link.textContent.trim();
+
+    link.href =
+        "https://wa.me/" +
+        WHATSAPP +
+        "?text=" +
+        encodeURIComponent(
+            "السلام علیکم، مجھے \"" +
+            serviceName +
+            "\" کے بارے میں معلومات چاہیے۔"
+        );
+
+});
+
+
+/* Search */
+
+const search = document.getElementById("search");
+
+search.addEventListener("input", function(){
+
+    const query =
+        this.value.trim().toLowerCase();
+
+    document.querySelectorAll(".group").forEach(group => {
+
+        let visible = 0;
+
+        group.querySelectorAll("li").forEach(item => {
+
+            const match =
+                item.textContent
+                .toLowerCase()
+                .includes(query);
+
+            item.hidden = !match;
+
+            if(match){
+                visible++;
+            }
+
+        });
+
+        group.hidden = visible === 0;
+
+        if(query && visible){
+            group.open = true;
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
