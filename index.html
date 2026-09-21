@@ -6,729 +6,1035 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>اي رجسٽريشنز | آن لائن اي-اسٽامپ پيپر | ڪوٽڙي</title>
+<title>اي رجسٽريشنز | آن لائن اسٽامپ پيپر | ڪوٽڙي</title>
 
 <meta name="description"
-content="ڪوٽڙي ضلعو ڄامشورو ۾ آن لائن اي-اسٽامپ پيپر، ڊيڊ ڪمپوزنگ، پرنٽنگ ۽ دستاويزي خدمتون.">
+content="ڪوٽڙي ضلعو ڄامشورو ۾ آن لائن اسٽامپ پيپر، ڊيڊ ڪمپوزنگ، پرنٽنگ ۽ دستاويزي سهولتون.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Public+Sans:wght@400;600;700;800&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Public+Sans:wght@400;600;700;800&display=swap"
 rel="stylesheet">
 
 <style>
 
-/* =========================
-   ROOT
-========================= */
-
 :root{
-    --navy:#063B45;
-    --navy2:#082F38;
-    --green:#087A55;
-    --green2:#0BA66F;
-    --light-green:#EAF7F1;
-    --gold:#E9B949;
-    --gold-light:#FFF4C9;
-    --cream:#F5F8F6;
-    --white:#FFFFFF;
-    --text:#19332D;
-    --muted:#687A73;
-    --border:#DCE7E2;
-    --shadow:0 12px 35px rgba(6,59,69,.10);
+--navy:#063B45;
+--navy2:#082F38;
+--green:#087A55;
+--green2:#0BA66F;
+--green3:#13B77A;
+--light-green:#EAF7F1;
+--gold:#E9B949;
+--gold2:#FFD65A;
+--gold-light:#FFF4C9;
+--cream:#F5F8F6;
+--white:#FFFFFF;
+--text:#19332D;
+--muted:#687A73;
+--border:#DCE7E2;
+--shadow:0 12px 35px rgba(6,59,69,.12);
 }
 
 *{
-    box-sizing:border-box;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    margin:0;
-    background:var(--cream);
-    color:var(--text);
-    font-family:"Noto Naskh Arabic",serif;
-    font-size:18px;
-    line-height:1.8;
+margin:0;
+background:var(--cream);
+color:var(--text);
+font-family:"Noto Naskh Arabic",serif;
+font-size:18px;
+line-height:1.8;
 }
 
 a{
-    text-decoration:none;
-    color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 .container{
-    width:min(1160px,calc(100% - 30px));
-    margin:auto;
+width:min(1160px,calc(100% - 30px));
+margin:auto;
 }
 
 
-/* =========================
-   TOP BAR
-========================= */
+/* TOP BAR */
 
 .topbar{
-    background:var(--navy2);
-    color:white;
-    font-size:14px;
+background:linear-gradient(90deg,#063B45,#075D4D);
+color:white;
+font-size:14px;
 }
 
 .topbar .container{
-    min-height:38px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
+min-height:40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
-    background:white;
-    border-bottom:1px solid var(--border);
-    position:sticky;
-    top:0;
-    z-index:100;
-    box-shadow:0 2px 15px rgba(0,0,0,.05);
+background:white;
+border-bottom:1px solid var(--border);
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 3px 18px rgba(0,0,0,.07);
 }
 
 .header-inner{
-    min-height:78px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+min-height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
 }
 
 .logo-area{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:var(--navy);
+display:flex;
+align-items:center;
+gap:12px;
+color:var(--navy);
 }
 
 .logo{
-    width:48px;
-    height:48px;
-    border-radius:12px;
-    background:linear-gradient(135deg,var(--navy),var(--green));
-    color:white;
-    display:grid;
-    place-items:center;
-    font-family:Georgia,serif;
-    font-size:30px;
-    font-weight:bold;
-    box-shadow:0 7px 18px rgba(6,59,69,.2);
+width:48px;
+height:48px;
+border-radius:13px;
+background:linear-gradient(135deg,var(--navy),var(--green));
+color:white;
+display:grid;
+place-items:center;
+font-family:Georgia,serif;
+font-size:30px;
+font-weight:bold;
+box-shadow:0 7px 18px rgba(6,59,69,.2);
 }
 
 .logo-text{
-    font-size:25px;
-    font-weight:700;
+font-size:25px;
+font-weight:800;
+}
+
+.logo-sub{
+display:block;
+font-size:12px;
+color:var(--muted);
+line-height:1.3;
 }
 
 .nav{
-    display:flex;
-    gap:25px;
-    font-weight:600;
-    font-size:17px;
+display:flex;
+gap:25px;
+font-weight:600;
+font-size:17px;
 }
 
 .nav a:hover{
-    color:var(--green);
+color:var(--green);
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* SOCIAL HEADER */
 
-.hero{
-    background:
-    radial-gradient(circle at 15% 20%,rgba(11,166,111,.10),transparent 30%),
-    linear-gradient(135deg,#ECF8F2,#FFFFFF 55%,#F4F8EA);
+.header-social{
+display:flex;
+gap:9px;
+direction:ltr;
 }
 
-.hero-inner{
-    min-height:530px;
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    align-items:center;
-    gap:50px;
-    padding:65px 0;
+.social-btn{
+width:43px;
+height:43px;
+border-radius:50%;
+display:grid;
+place-items:center;
+color:white;
+font-family:Arial,sans-serif;
+font-size:19px;
+font-weight:bold;
+transition:.2s;
+box-shadow:0 5px 14px rgba(0,0,0,.12);
 }
 
-.badge{
-    display:inline-flex;
-    align-items:center;
-    gap:7px;
-    background:var(--light-green);
-    color:var(--green);
-    border:1px solid #CBE8DA;
-    padding:4px 16px;
-    border-radius:30px;
-    font-weight:700;
+.social-btn:hover{
+transform:translateY(-3px);
 }
 
-.hero h1{
-    color:var(--navy);
-    font-size:clamp(40px,5vw,66px);
-    line-height:1.15;
-    margin:18px 0 15px;
+.facebook{
+background:#1877F2;
 }
 
-.hero h1 span{
-    color:var(--green);
-}
-
-.hero-text{
-    max-width:650px;
-    color:var(--muted);
-    font-size:21px;
-}
-
-.buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:25px;
-}
-
-.btn{
-    min-height:50px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:8px 22px;
-    border-radius:9px;
-    font-weight:700;
-    border:1px solid transparent;
-    transition:.2s;
-}
-
-.btn-primary{
-    background:var(--green);
-    color:white;
-    box-shadow:0 8px 20px rgba(8,122,85,.22);
-}
-
-.btn-primary:hover{
-    background:#066847;
-    transform:translateY(-2px);
-}
-
-.btn-outline{
-    background:white;
-    border-color:var(--navy);
-    color:var(--navy);
-}
-
-.btn-outline:hover{
-    background:var(--light-green);
+.email{
+background:#087A55;
 }
 
 
-/* =========================
-   BANNER IMAGE
-========================= */
+/* SLIDER */
 
-.banner-wrap{
-    width:100%;
-    position:relative;
-    overflow:hidden;
-    background:white;
-    line-height:0;
+.slider{
+background:#eef5f1;
+padding:0;
 }
 
-.banner-img{
-    width:100%;
-    height:auto;
-    display:block;
+.slider-wrap{
+position:relative;
+overflow:hidden;
+background:white;
+box-shadow:var(--shadow);
+}
+
+.slide{
+display:none;
+position:relative;
+min-height:430px;
+}
+
+.slide.active{
+display:block;
+animation:fadeSlide .7s ease;
+}
+
+@keyframes fadeSlide{
+from{
+opacity:.3;
+transform:scale(1.015);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
 }
 
 
-/* =========================
-   NOTICE
-========================= */
+/* SLIDE 1 */
+
+.slide-image{
+width:100%;
+height:430px;
+object-fit:cover;
+display:block;
+}
+
+
+/* OTHER SLIDES */
+
+.slide-content{
+min-height:430px;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:35px;
+padding:45px;
+background:
+radial-gradient(circle at 15% 20%,rgba(11,166,111,.12),transparent 35%),
+linear-gradient(135deg,#F1FAF5,#FFFFFF,#FFF7DD);
+}
+
+.slide-text{
+padding:10px;
+}
+
+.slide-label{
+display:inline-block;
+background:var(--green);
+color:white;
+padding:4px 17px;
+border-radius:25px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.slide-content h2{
+font-size:43px;
+line-height:1.2;
+color:var(--navy);
+margin:8px 0;
+}
+
+.slide-content h2 span{
+color:var(--green);
+}
+
+.slide-content p{
+font-size:21px;
+color:var(--muted);
+}
+
+.slide-photo{
+width:100%;
+height:330px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 18px 45px rgba(6,59,69,.20);
+border:6px solid white;
+}
+
+
+/* CONTACT SLIDE */
+
+.contact-slide{
+background:linear-gradient(135deg,#063B45,#087A55);
+color:white;
+}
+
+.contact-slide h2{
+color:white;
+}
+
+.contact-slide p{
+color:#D8E9E4;
+}
+
+.contact-data{
+display:grid;
+gap:12px;
+margin-top:20px;
+}
+
+.contact-data a{
+background:rgba(255,255,255,.12);
+border:1px solid rgba(255,255,255,.2);
+padding:10px 15px;
+border-radius:10px;
+font-family:Arial,sans-serif;
+direction:ltr;
+text-align:left;
+transition:.2s;
+}
+
+.contact-data a:hover{
+background:rgba(255,255,255,.2);
+transform:translateX(-4px);
+}
+
+
+/* SLIDER DOTS */
+
+.slider-dots{
+position:absolute;
+bottom:17px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:8px;
+direction:ltr;
+}
+
+.dot{
+width:34px;
+height:7px;
+border-radius:10px;
+background:rgba(255,255,255,.65);
+cursor:pointer;
+transition:.25s;
+}
+
+.dot.active{
+background:white;
+width:45px;
+}
+
+
+/* NOTICE */
 
 .notice{
-    background:var(--gold);
-    color:#25391F;
-    border-bottom:1px solid #D5A62E;
+background:linear-gradient(90deg,var(--gold),var(--gold2));
+color:#25391F;
+border-bottom:1px solid #D5A62E;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .notice .container{
-    min-height:60px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    text-align:center;
+min-height:62px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+text-align:center;
 }
 
 .notice strong{
-    font-size:21px;
+font-size:21px;
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 .section{
-    padding:70px 0;
+padding:70px 0;
 }
 
 .section.white{
-    background:white;
+background:white;
 }
 
 .section-heading{
-    max-width:720px;
-    text-align:center;
-    margin:0 auto 35px;
+max-width:720px;
+text-align:center;
+margin:0 auto 35px;
 }
 
 .section-heading h2{
-    color:var(--navy);
-    font-size:40px;
-    line-height:1.2;
-    margin:0 0 8px;
+color:var(--navy);
+font-size:40px;
+line-height:1.2;
+margin:0 0 8px;
 }
 
 .section-heading p{
-    margin:0;
-    color:var(--muted);
+margin:0;
+color:var(--muted);
 }
 
 
-/* =========================
-   SERVICE CARDS
-========================= */
+/* SERVICES */
 
 .service-cards{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
 }
 
 .service-card{
-    display:block;
-    background:white;
-    border:1px solid var(--border);
-    border-radius:15px;
-    padding:25px 18px;
-    box-shadow:0 5px 20px rgba(6,59,69,.05);
-    transition:.25s;
-    cursor:pointer;
+background:white;
+border:1px solid var(--border);
+border-radius:17px;
+padding:25px 18px;
+box-shadow:0 5px 20px rgba(6,59,69,.06);
+transition:.25s;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+
+.service-card:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:5px;
+background:linear-gradient(90deg,var(--green),var(--gold));
 }
 
 .service-card:hover{
-    transform:translateY(-5px);
-    box-shadow:var(--shadow);
-    border-color:#B8D9CA;
+transform:translateY(-6px);
+box-shadow:var(--shadow);
+border-color:#B8D9CA;
 }
 
 .service-card:active{
-    transform:scale(.98);
+transform:scale(.97);
 }
 
 .icon{
-    width:60px;
-    height:60px;
-    display:grid;
-    place-items:center;
-    border-radius:15px;
-    background:var(--light-green);
-    color:var(--green);
-    font-size:31px;
-    margin-bottom:14px;
+width:64px;
+height:64px;
+display:grid;
+place-items:center;
+border-radius:17px;
+background:linear-gradient(135deg,#EAF7F1,#FFF4C9);
+color:var(--green);
+font-size:31px;
+margin-bottom:14px;
+box-shadow:inset 0 0 0 1px #CBE8DA;
 }
 
 .service-card h3{
-    margin:0 0 4px;
-    color:var(--navy);
-    font-size:21px;
+margin:0 0 4px;
+color:var(--navy);
+font-size:21px;
 }
 
 .service-card p{
-    margin:0;
-    color:var(--muted);
-    font-size:15px;
+margin:0;
+color:var(--muted);
+font-size:15px;
 }
 
 
-/* =========================
-   SEARCH
-========================= */
+/* SEARCH */
 
 .search{
-    max-width:680px;
-    margin:0 auto 30px;
+max-width:680px;
+margin:0 auto 30px;
 }
 
 .search input{
-    width:100%;
-    height:58px;
-    border:1px solid #BBD3C7;
-    border-radius:10px;
-    background:white;
-    padding:8px 20px;
-    font-family:inherit;
-    font-size:18px;
-    outline:none;
+width:100%;
+height:58px;
+border:2px solid #BBD3C7;
+border-radius:12px;
+background:white;
+padding:8px 20px;
+font-family:inherit;
+font-size:18px;
+outline:none;
 }
 
 .search input:focus{
-    border-color:var(--green);
-    box-shadow:0 0 0 3px rgba(8,122,85,.1);
+border-color:var(--green);
+box-shadow:0 0 0 4px rgba(8,122,85,.1);
 }
 
 
-/* =========================
-   DOCUMENT GROUPS
-========================= */
+/* GROUPS */
 
 .groups{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
 }
 
 .group{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:13px;
-    overflow:hidden;
+background:white;
+border:1px solid var(--border);
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(6,59,69,.04);
+transition:.2s;
+}
+
+.group:hover{
+border-color:#B8D9CA;
 }
 
 .group summary{
-    cursor:pointer;
-    list-style:none;
-    padding:17px 20px;
-    color:var(--navy);
-    font-size:20px;
-    font-weight:700;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+cursor:pointer;
+list-style:none;
+padding:17px 20px;
+color:var(--navy);
+font-size:20px;
+font-weight:700;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .group summary::-webkit-details-marker{
-    display:none;
+display:none;
 }
 
 .group summary:after{
-    content:"+";
-    color:var(--green);
-    font-family:Arial;
-    font-size:26px;
+content:"+";
+color:var(--green);
+font-family:Arial;
+font-size:27px;
 }
 
 .group[open] summary:after{
-    content:"−";
+content:"−";
 }
 
 .group ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    border-top:1px solid var(--border);
+list-style:none;
+margin:0;
+padding:0;
+border-top:1px solid var(--border);
 }
 
 .group li{
-    border-bottom:1px solid #EDF2EF;
+border-bottom:1px solid #EDF2EF;
 }
 
 .group li:last-child{
-    border-bottom:0;
+border-bottom:0;
 }
 
 .group li a{
-    display:block;
-    padding:10px 20px;
-    font-size:16px;
-    color:#40564E;
-    cursor:pointer;
+display:block;
+padding:11px 20px;
+font-size:16px;
+color:#40564E;
+transition:.2s;
 }
 
 .group li a:hover{
-    background:var(--light-green);
-    color:var(--green);
+background:var(--light-green);
+color:var(--green);
+padding-right:27px;
 }
 
 
-/* =========================
-   FACILITIES
-========================= */
+/* FACILITIES */
 
 .facilities{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:16px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
 }
 
 .facility{
-    display:block;
-    background:#F7FAF8;
-    border:1px solid var(--border);
-    border-radius:13px;
-    padding:25px 15px;
-    text-align:center;
-    cursor:pointer;
-    transition:.25s;
+background:white;
+border:1px solid var(--border);
+border-radius:15px;
+padding:25px 15px;
+text-align:center;
+box-shadow:0 5px 18px rgba(6,59,69,.05);
+transition:.2s;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+
+.facility:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:4px;
+background:var(--green);
 }
 
 .facility:hover{
-    transform:translateY(-4px);
-    box-shadow:var(--shadow);
-    border-color:#B8D9CA;
-}
-
-.facility:active{
-    transform:scale(.98);
+transform:translateY(-5px);
+box-shadow:var(--shadow);
 }
 
 .facility-icon{
-    font-size:34px;
+font-size:34px;
 }
 
 .facility strong{
-    display:block;
-    color:var(--navy);
-    font-size:19px;
-    margin-top:5px;
+display:block;
+color:var(--navy);
+font-size:19px;
+margin-top:5px;
 }
 
 .facility span{
-    color:var(--muted);
-    font-size:15px;
+color:var(--muted);
+font-size:15px;
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact{
-    background:linear-gradient(135deg,var(--navy),#075D4D);
-    color:white;
+background:
+linear-gradient(135deg,rgba(6,59,69,.97),rgba(7,93,77,.97));
+color:white;
 }
 
 .contact-inner{
-    padding:65px 0;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
+padding:65px 0;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
 }
 
 .contact h2{
-    margin:0 0 8px;
-    font-size:42px;
+margin:0 0 8px;
+font-size:42px;
 }
 
 .contact p{
-    color:#D8E9E4;
+color:#D8E9E4;
 }
 
 .phone{
-    font-family:Arial,sans-serif;
-    direction:ltr;
-    text-align:right;
-    font-size:40px;
-    font-weight:800;
-    color:#FFE27A;
+font-family:Arial,sans-serif;
+direction:ltr;
+text-align:right;
+font-size:40px;
+font-weight:800;
+color:#FFE27A;
+}
+
+.contact-links{
+display:grid;
+gap:10px;
+margin-top:18px;
+}
+
+.contact-link{
+display:block;
+padding:10px 16px;
+border:1px solid rgba(255,255,255,.2);
+background:rgba(255,255,255,.08);
+border-radius:10px;
+transition:.2s;
+}
+
+.contact-link:hover{
+background:rgba(255,255,255,.15);
+transform:translateX(-4px);
 }
 
 .contact .btn-outline{
-    background:transparent;
-    border-color:white;
-    color:white;
+background:transparent;
+border-color:white;
+color:white;
 }
 
 .contact .btn-outline:hover{
-    background:rgba(255,255,255,.1);
+background:rgba(255,255,255,.1);
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* BUTTONS */
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:25px;
+}
+
+.btn{
+min-height:50px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:8px 22px;
+border-radius:10px;
+font-weight:700;
+border:1px solid transparent;
+transition:.2s;
+}
+
+.btn-primary{
+background:var(--green);
+color:white;
+box-shadow:0 8px 20px rgba(8,122,85,.22);
+}
+
+.btn-primary:hover{
+background:#066847;
+transform:translateY(-2px);
+}
+
+.btn-outline{
+background:white;
+border-color:var(--navy);
+color:var(--navy);
+}
+
+.btn-outline:hover{
+background:var(--light-green);
+}
+
+
+/* FOOTER */
 
 footer{
-    background:white;
-    border-top:1px solid var(--border);
-    padding:22px 0;
-    color:var(--muted);
-    font-size:14px;
+background:#052F37;
+color:#D8E9E4;
+padding:25px 0;
+}
+
+.footer-inner{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:25px;
+align-items:center;
+}
+
+.footer-title{
+font-size:20px;
+font-weight:bold;
+color:white;
+}
+
+.footer-contact{
+display:grid;
+gap:5px;
+}
+
+.footer-contact a:hover{
+color:#FFE27A;
+}
+
+.footer-social{
+display:flex;
+gap:10px;
+direction:ltr;
+justify-content:flex-start;
+}
+
+.footer-bottom{
+border-top:1px solid rgba(255,255,255,.12);
+margin-top:20px;
+padding-top:15px;
+text-align:center;
+font-size:14px;
 }
 
 
-/* =========================
-   MOBILE BAR
-========================= */
+/* MOBILE BAR */
 
 .mobile-bar{
-    display:none;
+display:none;
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:950px){
 
-    .nav{
-        display:none;
-    }
+.nav{
+display:none;
+}
 
-    .hero-inner{
-        grid-template-columns:1fr;
-        padding:45px 0;
-    }
+.service-cards{
+grid-template-columns:repeat(2,1fr);
+}
 
-    .service-cards{
-        grid-template-columns:repeat(2,1fr);
-    }
+.facilities{
+grid-template-columns:repeat(2,1fr);
+}
 
-    .facilities{
-        grid-template-columns:repeat(2,1fr);
-    }
+.groups{
+grid-template-columns:1fr;
+}
 
-    .groups{
-        grid-template-columns:1fr;
-    }
+.contact-inner{
+grid-template-columns:1fr;
+}
 
-    .contact-inner{
-        grid-template-columns:1fr;
-    }
+.footer-inner{
+grid-template-columns:1fr 1fr;
+}
+
+.slide-content{
+grid-template-columns:1fr;
+padding:35px;
+}
+
+.slide-photo{
+height:270px;
+}
+
 }
 
 
 @media(max-width:600px){
 
-    body{
-        padding-bottom:72px;
-    }
+body{
+padding-bottom:72px;
+}
 
-    .container{
-        width:calc(100% - 22px);
-    }
+.container{
+width:calc(100% - 22px);
+}
 
-    .topbar .container{
-        font-size:11px;
-    }
+.topbar .container{
+font-size:11px;
+}
 
-    .logo{
-        width:42px;
-        height:42px;
-    }
+.topbar .container span:last-child{
+display:none;
+}
 
-    .logo-text{
-        font-size:21px;
-    }
+.header-inner{
+min-height:70px;
+}
 
-    .hero h1{
-        font-size:39px;
-    }
+.logo{
+width:42px;
+height:42px;
+}
 
-    .hero-text{
-        font-size:18px;
-    }
+.logo-text{
+font-size:21px;
+}
 
-    .buttons{
-        display:grid;
-    }
+.logo-sub{
+font-size:10px;
+}
 
-    .buttons .btn{
-        width:100%;
-    }
+.header-social{
+gap:6px;
+}
 
-    .service-cards{
-        grid-template-columns:1fr 1fr;
-        gap:10px;
-    }
+.social-btn{
+width:37px;
+height:37px;
+font-size:16px;
+}
 
-    .service-card{
-        padding:17px 12px;
-    }
 
-    .service-card h3{
-        font-size:18px;
-    }
+/* MOBILE SLIDER */
 
-    .service-card p{
-        font-size:13px;
-    }
+.slide{
+min-height:300px;
+}
 
-    .icon{
-        width:48px;
-        height:48px;
-        font-size:25px;
-    }
+.slide-image{
+height:300px;
+object-fit:cover;
+}
 
-    .facilities{
-        grid-template-columns:1fr 1fr;
-        gap:10px;
-    }
+.slide-content{
+min-height:300px;
+padding:25px 20px 45px;
+grid-template-columns:1fr;
+gap:10px;
+}
 
-    .facility{
-        padding:18px 10px;
-    }
+.slide-content h2{
+font-size:30px;
+}
 
-    .facility strong{
-        font-size:17px;
-    }
+.slide-content p{
+font-size:17px;
+}
 
-    .facility span{
-        font-size:13px;
-    }
+.slide-photo{
+height:175px;
+border-width:4px;
+}
 
-    .section{
-        padding:48px 0;
-    }
+.slide-label{
+font-size:14px;
+}
 
-    .section-heading h2{
-        font-size:32px;
-    }
+.slider-dots{
+bottom:10px;
+}
 
-    .contact-inner{
-        padding:48px 0;
-    }
+.dot{
+width:24px;
+height:6px;
+}
 
-    .contact h2{
-        font-size:32px;
-    }
+.dot.active{
+width:32px;
+}
 
-    .phone{
-        font-size:29px;
-    }
 
-    .mobile-bar{
-        display:grid;
-        position:fixed;
-        z-index:200;
-        bottom:0;
-        left:0;
-        right:0;
-        grid-template-columns:1fr 1fr;
-        gap:8px;
-        background:white;
-        border-top:1px solid var(--border);
-        padding:9px;
-    }
+/* NOTICE */
 
-    .mobile-bar .btn{
-        min-height:49px;
-    }
+.notice .container{
+min-height:60px;
+font-size:14px;
+flex-direction:column;
+gap:0;
+padding:6px 0;
+}
+
+.notice strong{
+font-size:18px;
+}
+
+
+/* SERVICES */
+
+.service-cards{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.service-card{
+padding:17px 12px;
+}
+
+.service-card h3{
+font-size:18px;
+}
+
+.service-card p{
+font-size:13px;
+}
+
+.icon{
+width:48px;
+height:48px;
+font-size:25px;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:48px 0;
+}
+
+.section-heading h2{
+font-size:32px;
+}
+
+
+/* FACILITIES */
+
+.facilities{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.facility{
+padding:20px 10px;
+}
+
+
+/* CONTACT */
+
+.contact-inner{
+padding:48px 0;
+}
+
+.contact h2{
+font-size:32px;
+}
+
+.phone{
+font-size:29px;
+}
+
+
+/* FOOTER */
+
+.footer-inner{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.footer-social{
+justify-content:center;
+}
+
+
+/* MOBILE BAR */
+
+.mobile-bar{
+display:grid;
+position:fixed;
+z-index:200;
+bottom:0;
+left:0;
+right:0;
+grid-template-columns:1fr 1fr;
+gap:8px;
+background:white;
+border-top:1px solid var(--border);
+padding:9px;
+}
+
+.mobile-bar .btn{
+min-height:49px;
+}
+
+}
+
+
+/* HIDDEN SEARCH GROUP */
+
+.group[hidden]{
+display:none;
 }
 
 </style>
@@ -739,38 +1045,42 @@ footer{
 <body>
 
 
-<!-- =========================
-     TOP BAR
-========================= -->
+<!-- TOP BAR -->
 
 <div class="topbar">
 
 <div class="container">
 
-<span>ڪوٽڙي، ضلعو ڄامشورو</span>
+<span>📍 ڪوٽڙي، ضلعو ڄامشورو</span>
 
-<span>سرڪاري اسٽامپ وينڊر • آن لائن اي-اسٽامپ پيپر</span>
-
-</div>
+<span>سرڪاري اسٽامپ وينڊر • آن لائن اسٽامپ پيپر</span>
 
 </div>
 
+</div>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
 <div class="container header-inner">
 
+
 <a href="#home" class="logo-area">
 
 <span class="logo">e</span>
 
+<span>
+
 <span class="logo-text">
 اي رجسٽريشنز
+</span>
+
+<span class="logo-sub">
+آن لائن اي-اسٽامپ پيپر ۽ دستاويزي سهولتون
+</span>
+
 </span>
 
 </a>
@@ -779,136 +1089,313 @@ footer{
 <nav class="nav">
 
 <a href="#home">هوم</a>
-
 <a href="#services">خدمتون</a>
-
-<a href="#documents">دستاويزات</a>
-
+<a href="#documents">دستاويز</a>
 <a href="#facilities">سهولتون</a>
-
 <a href="#contact">رابطو</a>
 
 </nav>
+
+
+<div class="header-social">
+
+<a
+class="social-btn facebook"
+href="https://www.facebook.com/share/1M5pbh9KNz/"
+target="_blank"
+rel="noopener"
+aria-label="Facebook">
+f
+</a>
+
+<a
+class="social-btn email"
+href="mailto:sarfrazmagsi232@gmail.com"
+aria-label="Email">
+✉
+</a>
+
+</div>
 
 </div>
 
 </header>
 
 
-
 <main id="home">
 
 
-<!-- =========================
-     TOP IMAGE
-========================= -->
+<!-- SLIDER -->
 
-<section class="banner-wrap">
+<section class="slider">
+
+<div class="container">
+
+<div class="slider-wrap">
+
+
+<!-- SLIDE 1 -->
+
+<div class="slide active">
 
 <img
-class="banner-img"
-src="./sarfraz-magsi-banner.jpg"
-alt="سرفراز مگسي سرڪاري اي-اسٽامپ وينڊر"
+src="sarfraz.jpg"
+alt="سرفراز مگسي سرڪاري اسٽامپ وينڊر"
+class="slide-image"
 >
 
-</section>
+</div>
 
 
+<!-- SLIDE 2 -->
 
-<!-- =========================
-     HERO
-========================= -->
+<div class="slide">
 
-<section class="hero">
+<div class="slide-content">
 
-<div class="container hero-inner">
+<div class="slide-text">
 
-<div>
-
-<span class="badge">
-✓ آسان، تيز ۽ قابلِ اعتماد
+<span class="slide-label">
+آن لائن سهولت
 </span>
 
+<h2>
+آن لائن <span>اسٽامپ پيپر</span>
+</h2>
 
-<h1>
-
-آن لائن
-<span>اي-اسٽامپ پيپر</span>
-۽ دستاويزي خدمتون
-
-</h1>
-
-
-<p class="hero-text">
-
-ڪوٽڙي ۾ آن لائن اي-اسٽامپ پيپر،
-ڊيڊ ڪمپوزنگ ۽ پرنٽنگ جي سهولت.
-سنڌي، اردو ۽ انگريزي ۾ دستاويز تيار ڪرايو.
-
+<p>
+اسان وٽ آن لائن اسٽامپ پيپر جي سهولت موجود آهي.
+گهربل معلومات لاءِ WhatsApp تي رابطو ڪريو.
 </p>
-
-
-<div class="buttons">
 
 <a
 class="btn btn-primary"
-href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20اي-اسٽامپ%20پيپر%20جي%20باري%20۾%20معلومات%20گهرجي."
-target="_blank"
-rel="noopener"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20آن%20لائن%20اسٽامپ%20پيپر%20جي%20معلومات%20گهرجي."
 >
-
-واٽس ايپ تي رابطو ڪريو
-
-</a>
-
-
-<a
-class="btn btn-outline"
-href="tel:+923001320027"
->
-
-☎ 0300-1320027
-
+WhatsApp تي رابطو ڪريو
 </a>
 
 </div>
 
+<img
+class="slide-photo"
+src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=85"
+alt="آن لائن اسٽامپ پيپر"
+>
+
+</div>
+
+</div>
+
+
+<!-- SLIDE 3 -->
+
+<div class="slide">
+
+<div class="slide-content">
+
+<div class="slide-text">
+
+<span class="slide-label">
+ڪمپوزنگ
+</span>
+
+<h2>
+هر قسم جي <span>ڪمپوزنگ</span>
+</h2>
 
 <p>
+اسان وٽ هر قسم جي ڪمپوزنگ جي سهولت موجود آهي.
+سنڌي، اردو ۽ انگريزي ۾ دستاويز تيار ڪرايو.
+</p>
 
-<strong>سرفراز مگسي</strong><br>
+<a
+class="btn btn-primary"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20ڪمپوزنگ%20جي%20معلومات%20گهرجي."
+>
+WhatsApp تي رابطو ڪريو
+</a>
 
-سرڪاري اسٽامپ وينڊر<br>
+</div>
 
-ڊي سي آفيس مين روڊ، مين گيٽ جي سامهون،
-ڪوٽڙي، ضلعو ڄامشورو
+<img
+class="slide-photo"
+src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=85"
+alt="ڪمپيوٽر تي ڪم ڪندڙ شخص"
+>
 
+</div>
+
+</div>
+
+
+<!-- SLIDE 4 -->
+
+<div class="slide">
+
+<div class="slide-content contact-slide">
+
+<div class="slide-text">
+
+<span class="slide-label">
+رابطو
+</span>
+
+<h2>
+اسان سان <span>رابطو</span> ڪريو
+</h2>
+
+<p>
+اسٽامپ پيپر، ڪمپوزنگ، پرنٽنگ يا ڪنهن به دستاويزي سهولت لاءِ رابطو ڪريو.
+</p>
+
+<div class="contact-data">
+
+<a href="tel:+923001320027">
+☎ 0300-1320027
+</a>
+
+<a href="mailto:sarfrazmagsi232@gmail.com">
+✉ sarfrazmagsi232@gmail.com
+</a>
+
+<a
+href="https://www.facebook.com/share/1M5pbh9KNz/"
+target="_blank"
+rel="noopener">
+f Facebook
+</a>
+
+<a
+href="https://wa.me/923001320027"
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<div style="
+background:linear-gradient(135deg,#087A55,#0BA66F);
+border-radius:25px;
+padding:35px;
+text-align:center;
+box-shadow:0 20px 50px rgba(0,0,0,.2);
+">
+
+<div style="font-size:75px;">
+☎
+</div>
+
+<h2 style="color:white;margin:0;">
+رابطو ڪريو
+</h2>
+
+<p style="color:white;">
+تيز ۽ آسان رابطو
 </p>
 
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SLIDE 5 -->
+
+<div class="slide">
+
+<div class="slide-content">
+
+<div class="slide-text">
+
+<span class="slide-label">
+مڪمل سهولتون
+</span>
+
+<h2>
+اسان وٽ <span>هر قسم جي سهولت</span> موجود آهي
+</h2>
+
+<p>
+هيٺ ويب سائيٽ ۾ ڏنل هر قسم جي سهولت موجود آهي.
+ڪنهن به آپشن تي ڪلڪ ڪريو ۽ WhatsApp تي رابطو ڪريو.
+</p>
+
+<a
+class="btn btn-primary"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20سهولت%20جي%20معلومات%20گهرجي."
+>
+WhatsApp تي رابطو ڪريو
+</a>
+
+</div>
+
+<div style="
+background:linear-gradient(135deg,#063B45,#087A55);
+border-radius:25px;
+padding:45px 25px;
+color:white;
+text-align:center;
+box-shadow:0 20px 50px rgba(6,59,69,.25);
+">
+
+<div style="font-size:75px;">
+✓
+</div>
+
+<h2 style="color:white;">
+هر قسم جون سهولتون
+</h2>
+
+<p style="color:#D8E9E4;">
+هڪ ئي جاءِ تي
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- DOTS -->
+
+<div class="slider-dots">
+
+<span class="dot active" data-slide="0"></span>
+<span class="dot" data-slide="1"></span>
+<span class="dot" data-slide="2"></span>
+<span class="dot" data-slide="3"></span>
+<span class="dot" data-slide="4"></span>
+
+</div>
+
+
+</div>
 
 </div>
 
 </section>
 
 
-
-<!-- =========================
-     NOTICE
-========================= -->
+<!-- YELLOW NOTICE -->
 
 <div class="notice">
 
 <div class="container">
 
-<strong>اهم اطلاع:</strong>
+<strong>⚠ اهم اطلاع:</strong>
 
 <span>
-
-روايتي اسٽامپ پيپر جو ڪم بند آهي.
-هاڻي صرف آن لائن پرنٽ ٿيل اي-اسٽامپ پيپر استعمال ڪريو.
-
+روايتي اسٽامپ پيپر جو ڪم بند آهي، هاڻي صرف آن لائن پرنٽ ٿيل اسٽامپ پيپر استعمال ڪريو.
 </span>
 
 </div>
@@ -916,10 +1403,7 @@ href="tel:+923001320027"
 </div>
 
 
-
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section class="section" id="services">
 
@@ -930,7 +1414,7 @@ href="tel:+923001320027"
 <h2>اسان جون خدمتون</h2>
 
 <p>
-ضرورت مطابق سروس چونڊيو ۽ واٽس ايپ تي رابطو ڪريو.
+ضرورت مطابق سروس چونڊيو ۽ WhatsApp تي سڌو رابطو ڪريو.
 </p>
 
 </div>
@@ -939,89 +1423,58 @@ href="tel:+923001320027"
 <div class="service-cards">
 
 
-<!-- E STAMP -->
-
 <a
 class="service-card"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="آن لائن اي-اسٽامپ پيپر"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20آن%20لائن%20اسٽامپ%20پيپر%20جي%20معلومات%20گهرجي."
 >
 
 <div class="icon">📜</div>
 
-<h3>آن لائن اي-اسٽامپ پيپر</h3>
+<h3>آن لائن اسٽامپ پيپر</h3>
 
-<p>
-آن لائن اي-اسٽامپ پيپر جي سهولت
-</p>
+<p>آن لائن اسٽامپ پيپر جي سهولت</p>
 
 </a>
 
 
-
-<!-- COMPOSING -->
-
 <a
 class="service-card"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="ڊيڊ ڪمپوزنگ"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20ڊيڊ%20ڪمپوزنگ%20جي%20معلومات%20گهرجي."
 >
 
 <div class="icon">✍️</div>
 
 <h3>ڊيڊ ڪمپوزنگ</h3>
 
-<p>
-دستاويزن جي ڪمپوزنگ ۽ تياري
-</p>
+<p>دستاويزن جي ڪمپوزنگ ۽ تياري</p>
 
 </a>
 
 
-
-<!-- PRINTING -->
-
 <a
 class="service-card"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="پرنٽنگ"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20پرنٽنگ%20جي%20معلومات%20گهرجي."
 >
 
 <div class="icon">🖨️</div>
 
 <h3>پرنٽنگ</h3>
 
-<p>
-صاف ۽ معياري پرنٽ جي سهولت
-</p>
+<p>صاف ۽ معياري پرنٽ جي سهولت</p>
 
 </a>
 
 
-
-<!-- LANGUAGES -->
-
 <a
 class="service-card"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="سنڌي، اردو ۽ انگريزي ڪمپوزنگ"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20سنڌي%20اردو%20انگريزي%20ڪمپوزنگ%20جي%20معلومات%20گهرجي."
 >
 
 <div class="icon">🌐</div>
 
-<h3>ٽي ٻوليون</h3>
+<h3>ٽن ٻولين ۾</h3>
 
-<p>
-سنڌي، اردو ۽ انگريزي
-</p>
+<p>سنڌي، اردو ۽ انگريزي</p>
 
 </a>
 
@@ -1033,10 +1486,7 @@ data-service="سنڌي، اردو ۽ انگريزي ڪمپوزنگ"
 </section>
 
 
-
-<!-- =========================
-     DOCUMENTS
-========================= -->
+<!-- DOCUMENTS -->
 
 <section class="section white" id="documents">
 
@@ -1044,11 +1494,10 @@ data-service="سنڌي، اردو ۽ انگريزي ڪمپوزنگ"
 
 <div class="section-heading">
 
-<h2>دستاويزات ۽ ڊيڊز</h2>
+<h2>دستاويز ۽ ڊيڊز</h2>
 
 <p>
-پنهنجي گهربل دستاويز ڳوليو.
-سروس تي ڪلڪ ڪري واٽس ايپ تي معلومات حاصل ڪريو.
+پنهنجي گهربل دستاويز ڳوليو ۽ سروس تي ڪلڪ ڪري WhatsApp تي معلومات حاصل ڪريو.
 </p>
 
 </div>
@@ -1059,7 +1508,7 @@ data-service="سنڌي، اردو ۽ انگريزي ڪمپوزنگ"
 <input
 id="search"
 type="search"
-placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف اٽارني..."
+placeholder="مثال: سيل ڊيڊ، ڪرائي نامو، پاور آف اٽارني..."
 >
 
 </div>
@@ -1068,32 +1517,20 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 <div class="groups" id="groups">
 
 
-<!-- SALE -->
-
 <details class="group">
 
-<summary>
-فروخت ۽ منتقلي
-</summary>
+<summary>فروخت ۽ منتقلي</summary>
 
 <ul>
 
 <li><a>سيل ڊيڊ</a></li>
-
 <li><a>معاهدو فروخت بمع قبضو</a></li>
-
 <li><a>معاهدو فروخت بغير قبضو</a></li>
-
 <li><a>پري ليز ايگريمينٽ آف سيل</a></li>
-
 <li><a>ڪنوينس ڊيڊ</a></li>
-
 <li><a>سرٽيفڪيٽ آف سيل</a></li>
-
 <li><a>جائيداد جو تبادلو</a></li>
-
 <li><a>ڊيڊ آف اسائنمينٽ</a></li>
-
 <li><a>ريليز ڊيڊ</a></li>
 
 </ul>
@@ -1101,27 +1538,17 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </details>
 
 
-
-<!-- LEASE -->
-
 <details class="group">
 
-<summary>
-ليز ۽ ڪرائيو
-</summary>
+<summary>ليز ۽ ڪرائي</summary>
 
 <ul>
 
 <li><a>ليز ڊيڊ</a></li>
-
 <li><a>سب ليز ڊيڊ</a></li>
-
-<li><a>ڪرائيم نامو</a></li>
-
+<li><a>ڪرائي نامو</a></li>
 <li><a>ليز جي تجديد</a></li>
-
-<li><a>ليز جي مدت ۾ واڌ</a></li>
-
+<li><a>ليز جي مدت ۾ توسيع</a></li>
 <li><a>ڊيڊ آف سرينڊر</a></li>
 
 </ul>
@@ -1129,25 +1556,16 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </details>
 
 
-
-<!-- POWER -->
-
 <details class="group">
 
-<summary>
-پاور آف اٽارني
-</summary>
+<summary>پاور آف اٽارني</summary>
 
 <ul>
 
 <li><a>جنرل پاور آف اٽارني</a></li>
-
 <li><a>اسپيشل پاور آف اٽارني</a></li>
-
 <li><a>ناقابلِ تنسيخ جنرل پاور آف اٽارني</a></li>
-
 <li><a>سب جنرل پاور آف اٽارني</a></li>
-
 <li><a>پاور آف اٽارني جي منسوخي</a></li>
 
 </ul>
@@ -1155,29 +1573,18 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </details>
 
 
-
-<!-- GIFT -->
-
 <details class="group">
 
-<summary>
-گفٽ، وصيت ۽ وقف
-</summary>
+<summary>گفٽ، وصيت ۽ وقف</summary>
 
 <ul>
 
 <li><a>گفٽ ڊيڊ</a></li>
-
 <li><a>زباني هبہ جو اقرار نامو</a></li>
-
 <li><a>زباني هبہ جي منسوخي</a></li>
-
 <li><a>وصيت نامو</a></li>
-
 <li><a>وصيت جي منسوخي</a></li>
-
 <li><a>وقف ڊيڊ</a></li>
-
 <li><a>ٽرسٽ ڊيڊ</a></li>
 
 </ul>
@@ -1185,23 +1592,15 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </details>
 
 
-
-<!-- MORTGAGE -->
-
 <details class="group">
 
-<summary>
-رهن ۽ بينڪنگ
-</summary>
+<summary>رهن ۽ بينڪنگ</summary>
 
 <ul>
 
 <li><a>مارگيج ڊيڊ بينڪنگ</a></li>
-
 <li><a>مارگيج ۾ ترميم</a></li>
-
 <li><a>ڊيڊ آف وڌيڪ چارج</a></li>
-
 <li><a>انڊرٽيڪنگ يا سيڪيورٽي بانڊ</a></li>
 
 </ul>
@@ -1209,25 +1608,16 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </details>
 
 
-
-<!-- BUSINESS -->
-
 <details class="group">
 
-<summary>
-پارٽنرشپ ۽ ڪاروبار
-</summary>
+<summary>پارٽنرشپ ۽ ڪاروبار</summary>
 
 <ul>
 
 <li><a>پارٽنرشپ ڊيڊ</a></li>
-
 <li><a>پارٽنرشپ جي تحليل</a></li>
-
 <li><a>ڊيڊ آف امالگميشن</a></li>
-
 <li><a>ميمورنڊم ڊيڊ</a></li>
-
 <li><a>اثاثن جو اقرار نامو</a></li>
 
 </ul>
@@ -1235,29 +1625,18 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </details>
 
 
-
-<!-- CORRECTION -->
-
 <details class="group">
 
-<summary>
-درستگي ۽ عدالتي دستاويز
-</summary>
+<summary>درستگي ۽ عدالتي دستاويز</summary>
 
 <ul>
 
 <li><a>ترميمي ڊيڊ</a></li>
-
 <li><a>درستگي ڊيڊ</a></li>
-
 <li><a>ريڪٽيفڪيشن ڊيڊ</a></li>
-
 <li><a>ايڊينڊا ڊيڊ</a></li>
-
-<li><a>سپليمنٽ ڊيڊ</a></li>
-
-<li><a>عدالتي مقدمې جي زيرِ سماعت هجڻ جو نوٽيس</a></li>
-
+<li><a>سپليمينٽ ڊيڊ</a></li>
+<li><a>عدالتي مقدمے جي زيرِ سماعت هجڻ جو نوٽيس</a></li>
 <li><a>عدالتي حڪم نامو</a></li>
 
 </ul>
@@ -1272,10 +1651,7 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 </section>
 
 
-
-<!-- =========================
-     FACILITIES
-========================= -->
+<!-- FACILITIES -->
 
 <section class="section" id="facilities">
 
@@ -1286,7 +1662,7 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 <h2>اسان جون سهولتون</h2>
 
 <p>
-ضروري سهولتون هڪ ئي جاءِ تي
+ضروري ڪم هڪ ئي جاءِ تي
 </p>
 
 </div>
@@ -1295,34 +1671,23 @@ placeholder="مثال: سيل ڊيڊ، ڪرائيم نامو، پاور آف ا�
 <div class="facilities">
 
 
-<!-- E STAMP -->
-
 <a
 class="facility"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="آن لائن اي-اسٽامپ پيپر"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20آن%20لائن%20اسٽامپ%20پيپر%20جي%20معلومات%20گهرجي."
 >
 
 <div class="facility-icon">📜</div>
 
-<strong>آن لائن اي-اسٽامپ پيپر</strong>
+<strong>آن لائن اسٽامپ پيپر</strong>
 
 <span>دستياب آهي</span>
 
 </a>
 
 
-
-<!-- PRINTING -->
-
 <a
 class="facility"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="پرنٽنگ"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20پرنٽنگ%20جي%20معلومات%20گهرجي."
 >
 
 <div class="facility-icon">🖨️</div>
@@ -1334,15 +1699,9 @@ data-service="پرنٽنگ"
 </a>
 
 
-
-<!-- COMPOSING -->
-
 <a
 class="facility"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="ڪمپوزنگ"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20ڪمپوزنگ%20جي%20معلومات%20گهرجي."
 >
 
 <div class="facility-icon">✍️</div>
@@ -1354,22 +1713,16 @@ data-service="ڪمپوزنگ"
 </a>
 
 
-
-<!-- ELECTRICITY -->
-
 <a
 class="facility"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
-data-service="بجلي جي سهولت"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20بجلي%20جي%20سهولت%20جي%20معلومات%20گهرجي."
 >
 
 <div class="facility-icon">⚡</div>
 
 <strong>بجلي</strong>
 
-<span>بجلي جي سهولت دستياب آهي</span>
+<span>دستياب</span>
 
 </a>
 
@@ -1381,51 +1734,65 @@ data-service="بجلي جي سهولت"
 </section>
 
 
-
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
 <div class="container contact-inner">
 
+
 <div>
 
-<h2>
-رابطو ڪريو
-</h2>
+<h2>رابطو ڪريو</h2>
 
 <p>
-
-اي-اسٽامپ پيپر يا ڪنهن به ڊيڊ بابت
-معلومات لاءِ فون يا واٽس ايپ تي رابطو ڪريو.
-
+اسٽامپ پيپر يا ڪنهن به ڊيڊ بابت معلومات لاءِ فون يا WhatsApp تي رابطو ڪريو.
 </p>
 
+<div class="buttons">
 
 <a
 class="btn btn-primary"
-href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20دستاويز%20جي%20باري%20۾%20معلومات%20گهرجي."
-target="_blank"
-rel="noopener"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20معلومات%20گهرجي."
 >
-
-واٽس ايپ تي پيغام موڪليو
-
+WhatsApp تي پيغام موڪليو
 </a>
+
+</div>
 
 </div>
 
 
 <div>
 
-<a
-class="phone"
-href="tel:+923001320027"
->
+<div class="phone">
 0300-1320027
+</div>
+
+
+<div class="contact-links">
+
+<a
+class="contact-link"
+href="tel:+923001320027">
+☎ 0300-1320027
 </a>
+
+<a
+class="contact-link"
+href="mailto:sarfrazmagsi232@gmail.com">
+✉ sarfrazmagsi232@gmail.com
+</a>
+
+<a
+class="contact-link"
+href="https://www.facebook.com/share/1M5pbh9KNz/"
+target="_blank"
+rel="noopener">
+f Facebook تي رابطو ڪريو
+</a>
+
+</div>
 
 
 <p>
@@ -1434,11 +1801,22 @@ href="tel:+923001320027"
 
 سرڪاري اسٽامپ وينڊر<br>
 
-ڊي سي آفيس مين روڊ، مين گيٽ جي سامهون،
+ڊي سي آفيس مين روڊ، گيٽ جي سامهون،
 ڪوٽڙي، ضلعو ڄامشورو
 
 </p>
 
+
+<div class="buttons">
+
+<a
+class="btn btn-outline"
+target="_blank"
+rel="noopener"
+href="https://www.google.com/maps/search/?api=1&query=Babar+Stop+Kotri+Jamshoro"
+>
+📍 بابَر اسٽاپ، ڪوٽڙي
+</a>
 
 <a
 class="btn btn-outline"
@@ -1446,10 +1824,10 @@ target="_blank"
 rel="noopener"
 href="https://www.google.com/maps/search/?api=1&query=DC+Office+Main+Road+Kotri+Jamshoro"
 >
-
-📍 گوگل ميپس ۾ مقام ڏسو
-
+📍 DC Office Main Road
 </a>
+
+</div>
 
 </div>
 
@@ -1461,99 +1839,179 @@ href="https://www.google.com/maps/search/?api=1&query=DC+Office+Main+Road+Kotri+
 </main>
 
 
-
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
 <div class="container">
 
-اي رجسٽريشنز — آن لائن اي-اسٽامپ پيپر ۽ دستاويزي خدمتون
+<div class="footer-inner">
+
+
+<div>
+
+<div class="footer-title">
+اي رجسٽريشنز
+</div>
+
+<div>
+آن لائن اي-اسٽامپ پيپر ۽ دستاويزي سهولتون
+</div>
+
+</div>
+
+
+<div class="footer-contact">
+
+<a href="tel:+923001320027">
+☎ 0300-1320027
+</a>
+
+<a href="mailto:sarfrazmagsi232@gmail.com">
+✉ sarfrazmagsi232@gmail.com
+</a>
+
+<a
+href="https://www.facebook.com/share/1M5pbh9KNz/"
+target="_blank"
+rel="noopener">
+f Facebook
+</a>
+
+</div>
+
+
+<div class="footer-social">
+
+<a
+class="social-btn facebook"
+href="https://www.facebook.com/share/1M5pbh9KNz/"
+target="_blank"
+rel="noopener">
+f
+</a>
+
+<a
+class="social-btn email"
+href="mailto:sarfrazmagsi232@gmail.com">
+✉
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+سرفراز مگسي — آن لائن اسٽامپ پيپر ۽ دستاويزي سهولتون
+
+</div>
 
 </div>
 
 </footer>
 
 
-
-<!-- =========================
-     MOBILE CONTACT BAR
-========================= -->
+<!-- MOBILE CONTACT BAR -->
 
 <nav class="mobile-bar">
 
 <a
 class="btn btn-primary"
-href="https://wa.me/923001320027"
-target="_blank"
-rel="noopener"
+href="https://wa.me/923001320027?text=السلام%20عليڪم،%20مون%20کي%20مدد%20گهرجي."
 >
-واٽس ايپ
+WhatsApp
 </a>
-
 
 <a
 class="btn btn-outline"
 href="tel:+923001320027"
 >
-ڪال ڪريو
+☎ ڪال ڪريو
 </a>
 
 </nav>
 
 
-
 <script>
 
 /* =========================
-   WHATSAPP SERVICE LINKS
+   SLIDER
 ========================= */
 
-const WHATSAPP = "923001320027";
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+let currentSlide = 0;
+let sliderTimer;
 
 
-/*
-   Service cards تي ڪلڪ ڪرڻ سان
-   متعلقہ WhatsApp message ويندو.
-*/
+function showSlide(index){
 
-document.querySelectorAll("[data-service]").forEach(card => {
+    slides.forEach((slide)=>{
+        slide.classList.remove("active");
+    });
 
-    const serviceName =
-        card.getAttribute("data-service");
+    dots.forEach((dot)=>{
+        dot.classList.remove("active");
+    });
 
-    card.addEventListener("click", function(e){
+    currentSlide = index;
 
-        e.preventDefault();
+    slides[currentSlide].classList.add("active");
+    dots[currentSlide].classList.add("active");
+}
 
-        const message =
-            "السلام عليڪم، مون کي \"" +
-            serviceName +
-            "\" جي باري ۾ معلومات گهرجي.";
 
-        const url =
-            "https://wa.me/" +
-            WHATSAPP +
-            "?text=" +
-            encodeURIComponent(message);
+function nextSlide(){
 
-        window.open(url, "_blank");
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+
+function startSlider(){
+
+    clearInterval(sliderTimer);
+
+    sliderTimer = setInterval(()=>{
+        nextSlide();
+    },5000);
+
+}
+
+
+dots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        showSlide(index);
+        startSlider();
 
     });
 
 });
 
 
+startSlider();
+
+
 /* =========================
-   DOCUMENT WHATSAPP
+   WHATSAPP DOCUMENT LINKS
 ========================= */
 
-document.querySelectorAll(".group li a").forEach(link => {
+const WHATSAPP = "923001320027";
 
-    const serviceName =
-        link.textContent.trim();
+
+document.querySelectorAll(".group li a").forEach(link=>{
+
+    const serviceName = link.textContent.trim();
 
     link.href =
         "https://wa.me/" +
@@ -1562,12 +2020,8 @@ document.querySelectorAll(".group li a").forEach(link => {
         encodeURIComponent(
             "السلام عليڪم، مون کي \"" +
             serviceName +
-            "\" جي باري ۾ معلومات گهرجي."
+            "\" بابت معلومات گهرجي."
         );
-
-    link.target="_blank";
-
-    link.rel="noopener";
 
 });
 
@@ -1576,28 +2030,21 @@ document.querySelectorAll(".group li a").forEach(link => {
    SEARCH
 ========================= */
 
-const search =
-    document.getElementById("search");
+const search = document.getElementById("search");
 
 
-search.addEventListener("input", function(){
+search.addEventListener("input",function(){
 
     const query =
-        this.value
-        .trim()
-        .toLowerCase();
+        this.value.trim().toLowerCase();
 
 
-    document
-    .querySelectorAll(".group")
-    .forEach(group => {
+    document.querySelectorAll(".group").forEach(group=>{
 
         let visible = 0;
 
 
-        group
-        .querySelectorAll("li")
-        .forEach(item => {
+        group.querySelectorAll("li").forEach(item=>{
 
             const match =
                 item.textContent
@@ -1615,8 +2062,7 @@ search.addEventListener("input", function(){
         });
 
 
-        group.hidden =
-            visible === 0;
+        group.hidden = visible === 0;
 
 
         if(query && visible){
@@ -1627,7 +2073,36 @@ search.addEventListener("input", function(){
 
 });
 
+
+/* =========================
+   PAUSE SLIDER ON TOUCH
+========================= */
+
+const sliderWrap =
+document.querySelector(".slider-wrap");
+
+
+sliderWrap.addEventListener("mouseenter",()=>{
+    clearInterval(sliderTimer);
+});
+
+
+sliderWrap.addEventListener("mouseleave",()=>{
+    startSlider();
+});
+
+
+sliderWrap.addEventListener("touchstart",()=>{
+    clearInterval(sliderTimer);
+},{passive:true});
+
+
+sliderWrap.addEventListener("touchend",()=>{
+    startSlider();
+},{passive:true});
+
 </script>
+
 
 </body>
 </html>
